@@ -4,8 +4,11 @@
   "installCommand": null,
   "framework": null,
   "routes": [
-    { "handle": "filesystem" },
     { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/ridge-runner", "dest": "/" },
+    { "src": "/ridge-runner/(.*)", "dest": "/" },
+    { "src": "/yyc-tax-sale/[^.]+", "dest": "/yyc-tax-sale/index.html" },
+    { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
